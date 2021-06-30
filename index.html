@@ -2,16 +2,22 @@
   <head>
     <title>Html-Qrcode Demo</title>
   <body>
-      <div id="qr-reader" style="width:700px"></div>
+    <div id='qr-reader'>
+    </div>
+
     <div id="qr-reader-results"></div>
   </body>
   <script src="html5-qrcode.min.js"></script>
   <script src="main.js"></script>
 <style>
     /* Elemento | https://fbcf96fce18c.ngrok.io/ */
-
+    body {
+        background-color: #434d82;
+    }
     #qr-reader {
-      /* height: 500px; */
+        width: 700px; 
+        border: 6px solid #111111 !important;
+
     }
 
     /* Elemento | https://fbcf96fce18c.ngrok.io/ */
@@ -20,17 +26,10 @@
       /* font-size: 20px; */
       font-size: 24px;
     }
-
+ 
     /* En línea #1 | https://fbcf96fce18c.ngrok.io/ */
 
-    a {
-    }
-
     #qr-reader div span a {
-      color: green;
-      font-style: ;
-      font-family: arial;
-      text-align: center;
       visibility: hidden;
     }
 
@@ -59,6 +58,7 @@ button, input, select {
   font-size: 20px;
   font-family: arial;
 }
+
 
 </style>
   </head>
