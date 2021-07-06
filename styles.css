@@ -1,5 +1,13 @@
 body {
-    background-color: #434d82;
+  /*  background-color: #434d82; */
+    background: url('fruitswood.jpg');
+    
+      height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container{
       display: grid;
@@ -20,7 +28,7 @@ body {
 
 #qr-reader > div:nth-child(1) {
   /* font-size: 20px; */
-  font-size: 24px;
+  font-size: 40px;
 }
 
 
@@ -42,20 +50,22 @@ body {
 
 
 button, input, select {
-  font-size: 20px;
+  font-size: 40px;
 }
 
 
 #qr-reader__dashboard_section_csr span {
-  font-size: 20px;
+  font-size: 40px;
   font-family: arial;
 }
 
 #qr-reader-results{
-    margin-top: 5px;
+  margin-top: 5px;
   grid-area: main;
   border: 6px solid #111111 !important;
   background-color: white;
+  font-size: 40px;
+  overflow: scroll;
 }
 
 
