@@ -1,51 +1,61 @@
-    body {
-        background-color: #434d82;
-    }
-    .container{
-        display: flex;
-        justify-content: center;
-    }
+body {
+    background-color: #434d82;
+}
+.container{
+      display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Three columns, one three times as wide as the others */
+  grid-template-rows: auto 60vw; /* Three rows, two with explicit height: */
+  grid-template-areas:
+    ". header ."
+    ". main ."
+}
 
-    #qr-reader {
-        width: 700px; 
-        border: 6px solid #111111 !important;
 
-    }
+#qr-reader {
+    width: 700px; 
+    border: 6px solid #111111 !important;
+    background: white;
+  grid-area: header;
+}
 
-    #qr-reader > div:nth-child(1) {
-      /* font-size: 20px; */
-      font-size: 24px;
-    }
- 
+#qr-reader > div:nth-child(1) {
+  /* font-size: 20px; */
+  font-size: 24px;
+}
 
-    #qr-reader div span a {
-      visibility: hidden;
-    }
 
-    #qr-reader__dashboard_section_swaplink {
-      visibility: hidden;
-    }
+#qr-reader div span a {
+  visibility: hidden;
+}
 
-    #qr-reader__status_span {
-      visibility: hidden;
-    }
+#qr-reader__dashboard_section_swaplink {
+  visibility: hidden;
+}
 
-    .qr-reader__dashboard_section_csr div button {
-      visibility: hidden;
-    }
+#qr-reader__status_span {
+  visibility: hidden;
+}
 
-/* En línea #2 | https://fbcf96fce18c.ngrok.io/ */
+.qr-reader__dashboard_section_csr div button {
+  visibility: hidden;
+}
+
 
 button, input, select {
   font-size: 20px;
 }
 
-    
-/* En línea #2 | https://fbcf96fce18c.ngrok.io/ */
 
 #qr-reader__dashboard_section_csr span {
   font-size: 20px;
   font-family: arial;
+}
+
+#qr-reader-results{
+    margin-top: 5px;
+  grid-area: main;
+  border: 6px solid #111111 !important;
+  background-color: white;
 }
 
 
